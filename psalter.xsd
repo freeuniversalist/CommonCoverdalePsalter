@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Schema for the psalter parallel-version format (psalter-121.xml etc.).
+  Validate with:  xmllint - -noout - -schema psalter.xsd psalter-121.xml
+  (remove the space between the hyphens; written that way here only
+  because XML comments cannot contain a double hyphen)
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+
+  <!-- ============ root ============ -->
+  <xs:element name="psalter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="meta"/>
+        <xs:element ref="psalm" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="lang" type="xs:language"/>
+    </xs:complexType>
+
+    <!-- every text/@version must point at a declared version/@id -->
+    <xs:key name="versionKey">
+      <xs:selector xpath="meta/versions/version"/>
+      <xs:field xpath="@id"/>
+    </xs:key>
+    <xs:keyref name="textVersionRef" refer="versionKey">
+      <xs:selector xpath=".//text"/>
+      <xs:field xpath="@version"/>
+    </xs:keyref>
+
+    <!-- psalm numbers unique within the psalter -->
+    <xs:unique name="psalmNumberUnique">
+      <xs:selector xpath="psalm"/>
+      <xs:field xpath="@n"/>
+    </xs:unique>
+  </xs:element>
+
+  <!-- ============ metadata ============ -->
+  <xs:element name="meta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="title" type="xs:string"/>
+        <xs:element name="versions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="version" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="notation" type="xs:string" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="version">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="name" type="xs:string"/>
+        <xs:element name="basis" type="xs:string" minOccurs="0"/>
+        <xs:element name="license" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:NCName" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- ============ psalm structure ============ -->
+  <xs:element name="psalm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="incipit" minOccurs="0">
+          <xs:complexType>
+            <xs:attribute name="latin" type="xs:string"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="superscription" type="textGroup" minOccurs="0"/>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element ref="verse"/>
+          <xs:element ref="section"/>
+        </xs:choice>
+      </xs:sequence>
+      <xs:attribute name="n" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+    <xs:unique name="verseNumberUnique">
+      <xs:selector xpath=".//verse"/>
+      <xs:field xpath="@n"/>
+    </xs:unique>
+  </xs:element>
+
+  <!-- optional grouping, e.g. the 22 parts of Psalm 119 -->
+  <xs:element name="section">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="heading" type="textGroup" minOccurs="0"/>
+        <xs:element ref="verse" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="n" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="verse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="half" minOccurs="2" maxOccurs="3"/>
+        <xs:element name="refrain" type="textGroup" minOccurs="0"/>
+        <xs:element ref="note" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="n" type="xs:positiveInteger" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!--
+    Halves: normally a + b at the chant asterisk; a third half (pos="c")
+    is permitted for the occasional triple-division verse found in some
+    pointed psalters.
+  -->
+  <xs:element name="half">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="text" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="pos" use="required">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="a"/>
+            <xs:enumeration value="b"/>
+            <xs:enumeration value="c"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <!--
+    Text is mixed content: prose with inline dn elements marking words
+    that stand for the tetragrammaton (e.g. "the <dn>Lord</dn>", or in
+    Adonai-YHWH pairings "Lord <dn>God</dn>"). Content is the word as
+    read aloud; renderers apply the LORD / small-caps convention.
+  -->
+  <xs:element name="text">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="dn" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:NCName" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="dn" type="xs:string"/>
+
+  <!-- a group of parallel texts outside the half structure
+       (superscriptions, refrains, section headings) -->
+  <xs:complexType name="textGroup">
+    <xs:sequence>
+      <xs:element ref="text" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="note">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute name="type">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="textual"/>
+                <xs:enumeration value="translation"/>
+                <xs:enumeration value="liturgical"/>
+                <xs:enumeration value="editorial"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:attribute>
+          <xs:attribute name="version" type="xs:NCName"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

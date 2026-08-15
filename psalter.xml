@@ -1,0 +1,1812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Psalter master file: Coverdale tradition in parallel versions.
+  Validates against psalter.xsd.
+  bcp1928 text: public domain. modern text: CC0.
+-->
+<psalter lang="en">
+
+  <meta>
+    <title>The Common Coverdale Psalter</title>
+    <versions>
+      <version id="bcp1928">
+        <name>Psalter of the 1928 American Book of Common Prayer</name>
+        <basis>Coverdale 1535 as revised 1789/1892/1928</basis>
+        <license>Public domain</license>
+      </version>
+      <version id="modern">
+        <name>The Common Coverdale (this project)</name>
+        <basis>bcp1928, with pronouns, verb forms, archaisms, and select
+        renderings corrected toward the Hebrew</basis>
+        <license>CC0</license>
+      </version>
+    </versions>
+    <notation>
+      Each verse divides into halves at the chant asterisk. pos="a" is the
+      first half (before the asterisk), pos="b" the second. Render as
+      "a * b" for pointed text. Words standing for the tetragrammaton are
+      wrapped in the dn element, with the read-aloud form ("Lord") as
+      content; renderers apply the traditional LORD / small-caps
+      convention.
+    </notation>
+  </meta>
+
+  <psalm n="4">
+    <incipit latin="Cum invocarem"/>
+
+    <verse n="1">
+      <half pos="a">
+        <text version="bcp1928">Hear me when I call, O God of my righteousness:</text>
+        <text version="modern">Hear me when I call, O God of my righteousness;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">thou hast set me at liberty when I was in trouble; have mercy upon me, and hearken unto my prayer.</text>
+        <text version="modern">you have set me at liberty when I was in trouble; have mercy upon me, and listen to my prayer.</text>
+      </half>
+    </verse>
+
+    <verse n="2">
+      <half pos="a">
+        <text version="bcp1928">O ye sons of men, how long will ye blaspheme mine honour,</text>
+        <text version="modern">O you children of earth, how long will you dishonor my glory,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and have such pleasure in vanity, and seek after falsehood?</text>
+        <text version="modern">and take such pleasure in vanity, and seek after falsehood?</text>
+      </half>
+      <note type="translation">Coverdale's "blaspheme mine honour" (via the
+      Latin) overstates the Hebrew, which speaks of turning the psalmist's
+      glory to shame; hence "dishonor my glory." "Children of earth" renders
+      the generic address bene ish.</note>
+    </verse>
+
+    <verse n="3">
+      <half pos="a">
+        <text version="bcp1928">Know this also, that the <dn>Lord</dn> hath chosen to himself the man that is godly;</text>
+        <text version="modern">Know this also, that the <dn>Lord</dn> has chosen for himself the one who is godly;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">when I call upon the <dn>Lord</dn>, he will hear me.</text>
+        <text version="modern">when I call upon the <dn>Lord</dn>, he will hear me.</text>
+      </half>
+    </verse>
+
+    <verse n="4">
+      <half pos="a">
+        <text version="bcp1928">Stand in awe, and sin not;</text>
+        <text version="modern">Stand in awe, and do not sin;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">commune with your own heart, and in your chamber, and be still.</text>
+        <text version="modern">commune with your own heart upon your bed, and be still.</text>
+      </half>
+      <note type="translation">Hebrew mishkav, "bed": Coverdale's "chamber"
+      generalizes the image. "Stand in awe" retained over the more literal
+      "Tremble" for continuity with the Compline tradition.</note>
+    </verse>
+
+    <verse n="5">
+      <half pos="a">
+        <text version="bcp1928">Offer the sacrifice of righteousness,</text>
+        <text version="modern">Offer the sacrifice of righteousness,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and put your trust in the <dn>Lord</dn>.</text>
+        <text version="modern">and put your trust in the <dn>Lord</dn>.</text>
+      </half>
+    </verse>
+
+    <verse n="6">
+      <half pos="a">
+        <text version="bcp1928">There be many that say,</text>
+        <text version="modern">There are many who say,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">Who will show us any good?</text>
+        <text version="modern">"Who will show us any good?"</text>
+      </half>
+    </verse>
+
+    <verse n="7">
+      <half pos="a">
+        <text version="bcp1928"><dn>Lord</dn>, lift thou up</text>
+        <text version="modern"><dn>Lord</dn>, lift up</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">the light of thy countenance upon us.</text>
+        <text version="modern">the light of your countenance upon us.</text>
+      </half>
+    </verse>
+
+    <verse n="8">
+      <half pos="a">
+        <text version="bcp1928">Thou hast put gladness in my heart,</text>
+        <text version="modern">You have put gladness in my heart,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">since the time that their corn and wine and oil increased.</text>
+        <text version="modern">more than when their grain and wine and oil increased.</text>
+      </half>
+      <note type="translation">The Hebrew is comparative: gladness greater
+      than the harvest-rich enjoy. Coverdale's "since the time that" misreads
+      this. "Corn" updated to "grain" (American ambiguity). "And oil" is a
+      Vulgate inheritance absent from the Hebrew, retained as characteristic
+      of the Coverdale tradition.</note>
+    </verse>
+
+    <verse n="9">
+      <half pos="a">
+        <text version="bcp1928">I will lay me down in peace, and take my rest;</text>
+        <text version="modern">I will lie down in peace, and take my rest;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">for it is thou, <dn>Lord</dn>, only, that makest me dwell in safety.</text>
+        <text version="modern">for it is you, <dn>Lord</dn>, only, who make me dwell in safety.</text>
+      </half>
+      <note type="liturgical">Familiar from Compline; cadence preserved
+      for existing musical settings.</note>
+    </verse>
+
+  </psalm>
+
+  <psalm n="23">
+    <incipit latin="Dominus regit me"/>
+
+    <verse n="1">
+      <half pos="a">
+        <text version="bcp1928">The <dn>Lord</dn> is my shepherd;</text>
+        <text version="modern">The <dn>Lord</dn> is my shepherd;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">therefore can I lack nothing.</text>
+        <text version="modern">therefore I can lack nothing.</text>
+      </half>
+    </verse>
+
+    <verse n="2">
+      <half pos="a">
+        <text version="bcp1928">He shall feed me in a green pasture,</text>
+        <text version="modern">He shall feed me in a green pasture,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and lead me forth beside the waters of comfort.</text>
+        <text version="modern">and lead me forth beside the waters of comfort.</text>
+      </half>
+      <note type="liturgical">"Waters of comfort" is a distinctive Coverdale
+      phrase, retained as beloved and clear.</note>
+    </verse>
+
+    <verse n="3">
+      <half pos="a">
+        <text version="bcp1928">He shall convert my soul,</text>
+        <text version="modern">He shall restore my soul,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and bring me forth in the paths of righteousness for his Name's sake.</text>
+        <text version="modern">and bring me forth in the paths of righteousness for his Name's sake.</text>
+      </half>
+      <note type="translation">"Convert" in its older sense meant "turn
+      back, restore"; the modern religious sense misleads.</note>
+    </verse>
+
+    <verse n="4">
+      <half pos="a">
+        <text version="bcp1928">Yea, though I walk through the valley of the shadow of death, I will fear no evil;</text>
+        <text version="modern">Yea, though I walk through the valley of the shadow of death, I will fear no evil;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">for thou art with me; thy rod and thy staff comfort me.</text>
+        <text version="modern">for you are with me; your rod and your staff comfort me.</text>
+      </half>
+    </verse>
+
+    <verse n="5">
+      <half pos="a">
+        <text version="bcp1928">Thou shalt prepare a table before me in the presence of them that trouble me;</text>
+        <text version="modern">You shall prepare a table before me in the presence of those who trouble me;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">thou hast anointed my head with oil, and my cup shall be full.</text>
+        <text version="modern">you have anointed my head with oil, and my cup shall be full.</text>
+      </half>
+    </verse>
+
+    <verse n="6">
+      <half pos="a">
+        <text version="bcp1928">But thy loving-kindness and mercy shall follow me all the days of my life;</text>
+        <text version="modern">But your loving-kindness and mercy shall follow me all the days of my life;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and I will dwell in the house of the <dn>Lord</dn> for ever.</text>
+        <text version="modern">and I will dwell in the house of the <dn>Lord</dn> for ever.</text>
+      </half>
+    </verse>
+
+  </psalm>
+
+  <psalm n="31">
+    <incipit latin="In te, Domine, speravi"/>
+
+    <verse n="1">
+      <half pos="a">
+        <text version="bcp1928">In thee, O <dn>Lord</dn>, have I put my trust:</text>
+        <text version="modern">In you, O <dn>Lord</dn>, have I put my trust;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">let me never be put to confusion; deliver me in thy righteousness.</text>
+        <text version="modern">let me never be put to confusion; deliver me in your righteousness.</text>
+      </half>
+      <note type="editorial">Verses 1-6 only: the Compline portion
+      (In manus tuas). The remainder of the psalm awaits the full cycle.</note>
+    </verse>
+
+    <verse n="2">
+      <half pos="a">
+        <text version="bcp1928">Bow down thine ear to me;</text>
+        <text version="modern">Bow down your ear to me;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">make haste to deliver me.</text>
+        <text version="modern">make haste to deliver me.</text>
+      </half>
+    </verse>
+
+    <verse n="3">
+      <half pos="a">
+        <text version="bcp1928">And be thou my strong rock, and house of defence,</text>
+        <text version="modern">And be my strong rock and house of defense,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">that thou mayest save me.</text>
+        <text version="modern">that you may save me.</text>
+      </half>
+    </verse>
+
+    <verse n="4">
+      <half pos="a">
+        <text version="bcp1928">For thou art my strong rock, and my castle:</text>
+        <text version="modern">For you are my strong rock and my castle;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">be thou also my guide, and lead me for thy Name's sake.</text>
+        <text version="modern">be also my guide, and lead me for your Name's sake.</text>
+      </half>
+    </verse>
+
+    <verse n="5">
+      <half pos="a">
+        <text version="bcp1928">Draw me out of the net that they have laid privily for me;</text>
+        <text version="modern">Draw me out of the net that they have secretly laid for me;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">for thou art my strength.</text>
+        <text version="modern">for you are my strength.</text>
+      </half>
+    </verse>
+
+    <verse n="6">
+      <half pos="a">
+        <text version="bcp1928">Into thy hands I commend my spirit;</text>
+        <text version="modern">Into your hands I commend my spirit;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">for thou hast redeemed me, O <dn>Lord</dn>, thou God of truth.</text>
+        <text version="modern">for you have redeemed me, O <dn>Lord</dn>, O God of truth.</text>
+      </half>
+      <note type="liturgical">The nightly versicle of Compline and the
+      words of Christ from the cross (Luke 23:46); cadence preserved
+      unaltered apart from pronouns.</note>
+    </verse>
+
+  </psalm>
+
+  <psalm n="51">
+    <incipit latin="Miserere mei, Deus"/>
+
+    <verse n="1">
+      <half pos="a">
+        <text version="bcp1928">Have mercy upon me, O God, after thy great goodness;</text>
+        <text version="modern">Have mercy upon me, O God, after your great goodness;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">according to the multitude of thy mercies do away mine offences.</text>
+        <text version="modern">according to the multitude of your mercies do away my offenses.</text>
+      </half>
+    </verse>
+
+    <verse n="2">
+      <half pos="a">
+        <text version="bcp1928">Wash me throughly from my wickedness,</text>
+        <text version="modern">Wash me thoroughly from my wickedness,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and cleanse me from my sin.</text>
+        <text version="modern">and cleanse me from my sin.</text>
+      </half>
+    </verse>
+
+    <verse n="3">
+      <half pos="a">
+        <text version="bcp1928">For I acknowledge my faults,</text>
+        <text version="modern">For I acknowledge my faults,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and my sin is ever before me.</text>
+        <text version="modern">and my sin is ever before me.</text>
+      </half>
+    </verse>
+
+    <verse n="4">
+      <half pos="a">
+        <text version="bcp1928">Against thee only have I sinned, and done this evil in thy sight;</text>
+        <text version="modern">Against you only have I sinned, and done this evil in your sight,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">that thou mightest be justified in thy saying, and clear when thou art judged.</text>
+        <text version="modern">that you might be justified in your sentence, and blameless when you judge.</text>
+      </half>
+      <note type="translation">"Clear when thou art judged" follows the
+      Greek and Latin passive; the Hebrew reads "blameless when you
+      judge," restored here.</note>
+    </verse>
+
+    <verse n="5">
+      <half pos="a">
+        <text version="bcp1928">Behold, I was shapen in wickedness,</text>
+        <text version="modern">Behold, I was formed in wickedness,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and in sin hath my mother conceived me.</text>
+        <text version="modern">and in sin my mother conceived me.</text>
+      </half>
+    </verse>
+
+    <verse n="6">
+      <half pos="a">
+        <text version="bcp1928">But lo, thou requirest truth in the inward parts,</text>
+        <text version="modern">But lo, you require truth in the inward parts,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and shalt make me to understand wisdom secretly.</text>
+        <text version="modern">and shall make me understand wisdom secretly.</text>
+      </half>
+    </verse>
+
+    <verse n="7">
+      <half pos="a">
+        <text version="bcp1928">Thou shalt purge me with hyssop, and I shall be clean;</text>
+        <text version="modern">You shall purge me with hyssop, and I shall be clean;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">thou shalt wash me, and I shall be whiter than snow.</text>
+        <text version="modern">you shall wash me, and I shall be whiter than snow.</text>
+      </half>
+    </verse>
+
+    <verse n="8">
+      <half pos="a">
+        <text version="bcp1928">Thou shalt make me hear of joy and gladness,</text>
+        <text version="modern">You shall make me hear of joy and gladness,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">that the bones which thou hast broken may rejoice.</text>
+        <text version="modern">that the bones which you have broken may rejoice.</text>
+      </half>
+    </verse>
+
+    <verse n="9">
+      <half pos="a">
+        <text version="bcp1928">Turn thy face from my sins,</text>
+        <text version="modern">Turn your face from my sins,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and put out all my misdeeds.</text>
+        <text version="modern">and blot out all my misdeeds.</text>
+      </half>
+    </verse>
+
+    <verse n="10">
+      <half pos="a">
+        <text version="bcp1928">Make me a clean heart, O God,</text>
+        <text version="modern">Make me a clean heart, O God,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and renew a right spirit within me.</text>
+        <text version="modern">and renew a right spirit within me.</text>
+      </half>
+    </verse>
+
+    <verse n="11">
+      <half pos="a">
+        <text version="bcp1928">Cast me not away from thy presence,</text>
+        <text version="modern">Cast me not away from your presence,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and take not thy holy Spirit from me.</text>
+        <text version="modern">and take not your holy Spirit from me.</text>
+      </half>
+    </verse>
+
+    <verse n="12">
+      <half pos="a">
+        <text version="bcp1928">O give me the comfort of thy help again,</text>
+        <text version="modern">O give me the comfort of your help again,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and stablish me with thy free Spirit.</text>
+        <text version="modern">and establish me with your free Spirit.</text>
+      </half>
+    </verse>
+
+    <verse n="13">
+      <half pos="a">
+        <text version="bcp1928">Then shall I teach thy ways unto the wicked,</text>
+        <text version="modern">Then shall I teach your ways to the wicked,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and sinners shall be converted unto thee.</text>
+        <text version="modern">and sinners shall turn back to you.</text>
+      </half>
+    </verse>
+
+    <verse n="14">
+      <half pos="a">
+        <text version="bcp1928">Deliver me from blood-guiltiness, O God, thou that art the God of my health;</text>
+        <text version="modern">Deliver me from bloodguilt, O God, you who are the God of my salvation;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and my tongue shall sing of thy righteousness.</text>
+        <text version="modern">and my tongue shall sing of your righteousness.</text>
+      </half>
+      <note type="translation">"Health" in Coverdale regularly means
+      "salvation" (Old English haelu); modernized accordingly here and
+      wherever the sense is salvific rather than medical.</note>
+    </verse>
+
+    <verse n="15">
+      <half pos="a">
+        <text version="bcp1928">Thou shalt open my lips, O Lord,</text>
+        <text version="modern">You shall open my lips, O Lord,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and my mouth shall show thy praise.</text>
+        <text version="modern">and my mouth shall show forth your praise.</text>
+      </half>
+      <note type="liturgical">The opening versicle of the daily office
+      ("O Lord, open thou our lips") derives from this verse.</note>
+    </verse>
+
+    <verse n="16">
+      <half pos="a">
+        <text version="bcp1928">For thou desirest no sacrifice, else would I give it thee;</text>
+        <text version="modern">For you desire no sacrifice, or else I would give it;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">but thou delightest not in burnt-offerings.</text>
+        <text version="modern">but you take no delight in burnt-offerings.</text>
+      </half>
+    </verse>
+
+    <verse n="17">
+      <half pos="a">
+        <text version="bcp1928">The sacrifice of God is a troubled spirit:</text>
+        <text version="modern">The sacrifice of God is a troubled spirit;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">a broken and contrite heart, O God, shalt thou not despise.</text>
+        <text version="modern">a broken and contrite heart, O God, you shall not despise.</text>
+      </half>
+    </verse>
+
+  </psalm>
+
+  <psalm n="63">
+    <incipit latin="Deus, Deus meus"/>
+
+    <verse n="1">
+      <half pos="a">
+        <text version="bcp1928">O God, thou art my God;</text>
+        <text version="modern">O God, you are my God;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">early will I seek thee.</text>
+        <text version="modern">early will I seek you.</text>
+      </half>
+    </verse>
+
+    <verse n="2">
+      <half pos="a">
+        <text version="bcp1928">My soul thirsteth for thee, my flesh also longeth after thee,</text>
+        <text version="modern">My soul thirsts for you, my flesh also longs after you,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">in a barren and dry land where no water is.</text>
+        <text version="modern">in a barren and dry land where no water is.</text>
+      </half>
+    </verse>
+
+    <verse n="3">
+      <half pos="a">
+        <text version="bcp1928">Thus have I looked for thee in holiness,</text>
+        <text version="modern">Thus have I looked for you in the sanctuary,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">that I might behold thy power and glory.</text>
+        <text version="modern">that I might behold your power and glory.</text>
+      </half>
+      <note type="translation">Hebrew qodesh here denotes the sanctuary,
+      the holy place, rather than the abstract quality.</note>
+    </verse>
+
+    <verse n="4">
+      <half pos="a">
+        <text version="bcp1928">For thy loving-kindness is better than the life itself:</text>
+        <text version="modern">For your loving-kindness is better than life itself;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">my lips shall praise thee.</text>
+        <text version="modern">my lips shall praise you.</text>
+      </half>
+    </verse>
+
+    <verse n="5">
+      <half pos="a">
+        <text version="bcp1928">As long as I live will I magnify thee on this manner,</text>
+        <text version="modern">As long as I live will I magnify you in this manner,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and lift up my hands in thy Name.</text>
+        <text version="modern">and lift up my hands in your Name.</text>
+      </half>
+    </verse>
+
+    <verse n="6">
+      <half pos="a">
+        <text version="bcp1928">My soul shall be satisfied, even as it were with marrow and fatness,</text>
+        <text version="modern">My soul shall be satisfied, even as it were with marrow and fatness,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">when my mouth praiseth thee with joyful lips.</text>
+        <text version="modern">when my mouth praises you with joyful lips.</text>
+      </half>
+    </verse>
+
+    <verse n="7">
+      <half pos="a">
+        <text version="bcp1928">Have I not remembered thee in my bed,</text>
+        <text version="modern">Have I not remembered you upon my bed,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and thought upon thee when I was waking?</text>
+        <text version="modern">and thought upon you in the watches of the night?</text>
+      </half>
+      <note type="translation">The Hebrew speaks of meditating in the
+      night watches; Coverdale's "when I was waking" obscures the
+      image.</note>
+    </verse>
+
+    <verse n="8">
+      <half pos="a">
+        <text version="bcp1928">Because thou hast been my helper;</text>
+        <text version="modern">Because you have been my helper,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">therefore under the shadow of thy wings will I rejoice.</text>
+        <text version="modern">therefore under the shadow of your wings will I rejoice.</text>
+      </half>
+    </verse>
+
+    <verse n="9">
+      <half pos="a">
+        <text version="bcp1928">My soul hangeth upon thee;</text>
+        <text version="modern">My soul clings to you;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">thy right hand hath upholden me.</text>
+        <text version="modern">your right hand has upheld me.</text>
+      </half>
+    </verse>
+
+    <verse n="10">
+      <half pos="a">
+        <text version="bcp1928">These also that seek the hurt of my soul,</text>
+        <text version="modern">Those also who seek the hurt of my soul,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">they shall go under the earth.</text>
+        <text version="modern">they shall go down under the earth.</text>
+      </half>
+    </verse>
+
+    <verse n="11">
+      <half pos="a">
+        <text version="bcp1928">Let them fall upon the edge of the sword,</text>
+        <text version="modern">Let them fall upon the edge of the sword,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">that they may be a portion for foxes.</text>
+        <text version="modern">that they may be a portion for jackals.</text>
+      </half>
+      <note type="translation">Hebrew shu'alim: jackals, the carrion
+      scavengers of the wilderness, not the English fox.</note>
+    </verse>
+
+    <verse n="12">
+      <half pos="a">
+        <text version="bcp1928">But the King shall rejoice in God; all they also that swear by him shall be commended;</text>
+        <text version="modern">But the King shall rejoice in God; all those also who swear by him shall be commended;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">for the mouth of them that speak lies shall be stopped.</text>
+        <text version="modern">for the mouth of those who speak lies shall be stopped.</text>
+      </half>
+    </verse>
+
+  </psalm>
+
+  <psalm n="67">
+    <incipit latin="Deus misereatur"/>
+
+    <verse n="1">
+      <half pos="a">
+        <text version="bcp1928">God be merciful unto us, and bless us,</text>
+        <text version="modern">God be merciful to us, and bless us,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and show us the light of his countenance, and be merciful unto us;</text>
+        <text version="modern">and show us the light of his countenance, and be merciful to us;</text>
+      </half>
+    </verse>
+
+    <verse n="2">
+      <half pos="a">
+        <text version="bcp1928">That thy way may be known upon earth,</text>
+        <text version="modern">That your way may be known upon earth,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">thy saving health among all nations.</text>
+        <text version="modern">your saving power among all nations.</text>
+      </half>
+      <note type="translation">"Saving health": Coverdale's term for
+      salvation; see the note at Psalm 51:14.</note>
+    </verse>
+
+    <verse n="3">
+      <half pos="a">
+        <text version="bcp1928">Let the peoples praise thee, O God;</text>
+        <text version="modern">Let the peoples praise you, O God;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">yea, let all the peoples praise thee.</text>
+        <text version="modern">yea, let all the peoples praise you.</text>
+      </half>
+    </verse>
+
+    <verse n="4">
+      <half pos="a">
+        <text version="bcp1928">O let the nations rejoice and be glad;</text>
+        <text version="modern">O let the nations rejoice and be glad;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">for thou shalt judge the folk righteously, and govern the nations upon earth.</text>
+        <text version="modern">for you shall judge the peoples righteously, and govern the nations upon earth.</text>
+      </half>
+    </verse>
+
+    <verse n="5">
+      <half pos="a">
+        <text version="bcp1928">Let the peoples praise thee, O God;</text>
+        <text version="modern">Let the peoples praise you, O God;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">yea, let all the peoples praise thee.</text>
+        <text version="modern">yea, let all the peoples praise you.</text>
+      </half>
+    </verse>
+
+    <verse n="6">
+      <half pos="a">
+        <text version="bcp1928">Then shall the earth bring forth her increase;</text>
+        <text version="modern">Then shall the earth bring forth her increase;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and God, even our own God, shall give us his blessing.</text>
+        <text version="modern">and God, even our own God, shall give us his blessing.</text>
+      </half>
+    </verse>
+
+    <verse n="7">
+      <half pos="a">
+        <text version="bcp1928">God shall bless us;</text>
+        <text version="modern">God shall bless us;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and all the ends of the world shall fear him.</text>
+        <text version="modern">and all the ends of the world shall fear him.</text>
+      </half>
+    </verse>
+
+  </psalm>
+
+  <psalm n="91">
+    <incipit latin="Qui habitat"/>
+
+    <verse n="1">
+      <half pos="a">
+        <text version="bcp1928">Whoso dwelleth under the defence of the Most High,</text>
+        <text version="modern">Whoever dwells under the defense of the Most High</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">shall abide under the shadow of the Almighty.</text>
+        <text version="modern">shall abide under the shadow of the Almighty.</text>
+      </half>
+    </verse>
+
+    <verse n="2">
+      <half pos="a">
+        <text version="bcp1928">I will say unto the <dn>Lord</dn>, Thou art my hope, and my stronghold;</text>
+        <text version="modern">I will say to the <dn>Lord</dn>, "You are my hope and my stronghold;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">my God, in him will I trust.</text>
+        <text version="modern">my God, in whom I trust."</text>
+      </half>
+    </verse>
+
+    <verse n="3">
+      <half pos="a">
+        <text version="bcp1928">For he shall deliver thee from the snare of the hunter,</text>
+        <text version="modern">For he shall deliver you from the snare of the hunter</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and from the noisome pestilence.</text>
+        <text version="modern">and from the deadly pestilence.</text>
+      </half>
+      <note type="translation">"Noisome" now suggests noise or mere
+      unpleasantness; its older sense was "harmful, deadly."</note>
+    </verse>
+
+    <verse n="4">
+      <half pos="a">
+        <text version="bcp1928">He shall defend thee under his wings, and thou shalt be safe under his feathers;</text>
+        <text version="modern">He shall defend you under his wings, and you shall be safe under his feathers;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">his faithfulness and truth shall be thy shield and buckler.</text>
+        <text version="modern">his faithfulness and truth shall be your shield and buckler.</text>
+      </half>
+    </verse>
+
+    <verse n="5">
+      <half pos="a">
+        <text version="bcp1928">Thou shalt not be afraid for any terror by night,</text>
+        <text version="modern">You shall not be afraid of any terror by night,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">nor for the arrow that flieth by day;</text>
+        <text version="modern">nor of the arrow that flies by day;</text>
+      </half>
+    </verse>
+
+    <verse n="6">
+      <half pos="a">
+        <text version="bcp1928">For the pestilence that walketh in darkness,</text>
+        <text version="modern">Of the pestilence that walks in darkness,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">nor for the sickness that destroyeth in the noon-day.</text>
+        <text version="modern">nor of the sickness that destroys at noonday.</text>
+      </half>
+    </verse>
+
+    <verse n="7">
+      <half pos="a">
+        <text version="bcp1928">A thousand shall fall beside thee, and ten thousand at thy right hand;</text>
+        <text version="modern">A thousand shall fall beside you, and ten thousand at your right hand,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">but it shall not come nigh thee.</text>
+        <text version="modern">but it shall not come near you.</text>
+      </half>
+    </verse>
+
+    <verse n="8">
+      <half pos="a">
+        <text version="bcp1928">Yea, with thine eyes shalt thou behold,</text>
+        <text version="modern">Yea, with your eyes you shall behold,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and see the reward of the ungodly.</text>
+        <text version="modern">and see the reward of the ungodly.</text>
+      </half>
+    </verse>
+
+    <verse n="9">
+      <half pos="a">
+        <text version="bcp1928">For thou, <dn>Lord</dn>, art my hope;</text>
+        <text version="modern">For you have made the <dn>Lord</dn> your hope,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">thou hast set thine house of defence very high.</text>
+        <text version="modern">and the Most High your house of defense.</text>
+      </half>
+      <note type="translation">Coverdale's rendering garbles the Hebrew,
+      which reads: because you have made the LORD your refuge, the Most
+      High your dwelling. The modern text restores the sense.</note>
+    </verse>
+
+    <verse n="10">
+      <half pos="a">
+        <text version="bcp1928">There shall no evil happen unto thee,</text>
+        <text version="modern">There shall no evil happen to you,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">neither shall any plague come nigh thy dwelling.</text>
+        <text version="modern">neither shall any plague come near your dwelling.</text>
+      </half>
+    </verse>
+
+    <verse n="11">
+      <half pos="a">
+        <text version="bcp1928">For he shall give his angels charge over thee,</text>
+        <text version="modern">For he shall give his angels charge over you,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">to keep thee in all thy ways.</text>
+        <text version="modern">to keep you in all your ways.</text>
+      </half>
+    </verse>
+
+    <verse n="12">
+      <half pos="a">
+        <text version="bcp1928">They shall bear thee in their hands,</text>
+        <text version="modern">They shall bear you in their hands,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">that thou hurt not thy foot against a stone.</text>
+        <text version="modern">lest you hurt your foot against a stone.</text>
+      </half>
+    </verse>
+
+    <verse n="13">
+      <half pos="a">
+        <text version="bcp1928">Thou shalt go upon the lion and adder:</text>
+        <text version="modern">You shall tread upon the lion and adder;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">the young lion and the dragon shalt thou tread under thy feet.</text>
+        <text version="modern">the young lion and the serpent you shall trample underfoot.</text>
+      </half>
+      <note type="translation">"Dragon" renders Hebrew tannin, a serpent
+      or sea-creature; "serpent" avoids the modern mythological sense.</note>
+    </verse>
+
+    <verse n="14">
+      <half pos="a">
+        <text version="bcp1928">Because he hath set his love upon me, therefore will I deliver him;</text>
+        <text version="modern">"Because he has set his love upon me, therefore will I deliver him;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">I will set him up, because he hath known my Name.</text>
+        <text version="modern">I will lift him up, because he has known my Name.</text>
+      </half>
+    </verse>
+
+    <verse n="15">
+      <half pos="a">
+        <text version="bcp1928">He shall call upon me, and I will hear him;</text>
+        <text version="modern">He shall call upon me, and I will hear him;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">yea, I am with him in trouble; I will deliver him, and bring him to honour.</text>
+        <text version="modern">yea, I am with him in trouble; I will deliver him and bring him to honor.</text>
+      </half>
+    </verse>
+
+    <verse n="16">
+      <half pos="a">
+        <text version="bcp1928">With long life will I satisfy him,</text>
+        <text version="modern">With long life will I satisfy him,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and show him my salvation.</text>
+        <text version="modern">and show him my salvation."</text>
+      </half>
+    </verse>
+
+  </psalm>
+
+  <psalm n="92">
+    <incipit latin="Bonum est confiteri"/>
+
+    <verse n="1">
+      <half pos="a">
+        <text version="bcp1928">It is a good thing to give thanks unto the <dn>Lord</dn>,</text>
+        <text version="modern">It is a good thing to give thanks to the <dn>Lord</dn>,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and to sing praises unto thy Name, O Most Highest;</text>
+        <text version="modern">and to sing praises to your Name, O Most High;</text>
+      </half>
+    </verse>
+
+    <verse n="2">
+      <half pos="a">
+        <text version="bcp1928">To tell of thy loving-kindness early in the morning,</text>
+        <text version="modern">To tell of your loving-kindness early in the morning,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and of thy truth in the night season;</text>
+        <text version="modern">and of your truth in the night season;</text>
+      </half>
+    </verse>
+
+    <verse n="3">
+      <half pos="a">
+        <text version="bcp1928">Upon an instrument of ten strings, and upon the lute;</text>
+        <text version="modern">Upon an instrument of ten strings, and upon the lute;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">upon a loud instrument, and upon the harp.</text>
+        <text version="modern">upon a loud instrument, and upon the harp.</text>
+      </half>
+    </verse>
+
+    <verse n="4">
+      <half pos="a">
+        <text version="bcp1928">For thou, <dn>Lord</dn>, hast made me glad through thy works;</text>
+        <text version="modern">For you, <dn>Lord</dn>, have made me glad through your works;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and I will rejoice in giving praise for the operations of thy hands.</text>
+        <text version="modern">and I will rejoice in giving praise for the works of your hands.</text>
+      </half>
+    </verse>
+
+    <verse n="5">
+      <half pos="a">
+        <text version="bcp1928">O <dn>Lord</dn>, how glorious are thy works!</text>
+        <text version="modern">O <dn>Lord</dn>, how glorious are your works!</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">thy thoughts are very deep.</text>
+        <text version="modern">Your thoughts are very deep.</text>
+      </half>
+    </verse>
+
+    <verse n="6">
+      <half pos="a">
+        <text version="bcp1928">An unwise man doth not well consider this,</text>
+        <text version="modern">An unwise person does not well consider this,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and a fool doth not understand it.</text>
+        <text version="modern">and a fool does not understand it.</text>
+      </half>
+    </verse>
+
+    <verse n="7">
+      <half pos="a">
+        <text version="bcp1928">When the ungodly are green as the grass, and when all the workers of wickedness do flourish,</text>
+        <text version="modern">When the ungodly are green as the grass, and when all the workers of wickedness flourish,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">then shall they be destroyed for ever; but thou, <dn>Lord</dn>, art the Most Highest for evermore.</text>
+        <text version="modern">then shall they be destroyed for ever; but you, <dn>Lord</dn>, are the Most High for evermore.</text>
+      </half>
+    </verse>
+
+    <verse n="8">
+      <half pos="a">
+        <text version="bcp1928">For lo, thine enemies, O <dn>Lord</dn>, lo, thine enemies shall perish;</text>
+        <text version="modern">For lo, your enemies, O <dn>Lord</dn>, lo, your enemies shall perish;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and all the workers of wickedness shall be destroyed.</text>
+        <text version="modern">and all the workers of wickedness shall be destroyed.</text>
+      </half>
+    </verse>
+
+    <verse n="9">
+      <half pos="a">
+        <text version="bcp1928">But mine horn shall be exalted like the horn of an unicorn;</text>
+        <text version="modern">But my horn shall be exalted like the horn of a wild ox;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">for I am anointed with fresh oil.</text>
+        <text version="modern">for I am anointed with fresh oil.</text>
+      </half>
+      <note type="translation">Hebrew re'em, the wild ox; "unicorn" entered
+      the tradition through the Greek monokeros and the Latin
+      unicornis.</note>
+    </verse>
+
+    <verse n="10">
+      <half pos="a">
+        <text version="bcp1928">Mine eye also shall see his lust of mine enemies,</text>
+        <text version="modern">My eye also shall see the downfall of my enemies,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and mine ear shall hear his desire of the wicked that arise up against me.</text>
+        <text version="modern">and my ear shall hear the ruin of the wicked who rise up against me.</text>
+      </half>
+      <note type="translation">Coverdale's "his lust of mine enemies" is
+      Tudor idiom for "my desire upon my enemies," i.e. seeing their
+      defeat; the modern text renders the sense.</note>
+    </verse>
+
+    <verse n="11">
+      <half pos="a">
+        <text version="bcp1928">The righteous shall flourish like a palm-tree,</text>
+        <text version="modern">The righteous shall flourish like a palm tree,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and shall spread abroad like a cedar in Lebanon.</text>
+        <text version="modern">and shall spread abroad like a cedar of Lebanon.</text>
+      </half>
+      <note type="textual">"Lebanon" is itself a 1928 revision of the older
+      books' "Libanus," on the pattern documented at Psalm 104.</note>
+    </verse>
+
+    <verse n="12">
+      <half pos="a">
+        <text version="bcp1928">Such as are planted in the house of the <dn>Lord</dn></text>
+        <text version="modern">Those who are planted in the house of the <dn>Lord</dn></text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">shall flourish in the courts of the house of our God.</text>
+        <text version="modern">shall flourish in the courts of the house of our God.</text>
+      </half>
+    </verse>
+
+    <verse n="13">
+      <half pos="a">
+        <text version="bcp1928">They also shall bring forth more fruit in their age,</text>
+        <text version="modern">They also shall bring forth more fruit in their age,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and shall be fat and well-liking.</text>
+        <text version="modern">and shall be green and flourishing.</text>
+      </half>
+      <note type="translation">"Fat and well-liking" meant thriving and in
+      good condition; the modern phrase keeps the image of the evergreen
+      tree.</note>
+    </verse>
+
+    <verse n="14">
+      <half pos="a">
+        <text version="bcp1928">That they may show how true the <dn>Lord</dn> my strength is,</text>
+        <text version="modern">That they may show how true the <dn>Lord</dn> my strength is,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and that there is no unrighteousness in him.</text>
+        <text version="modern">and that there is no unrighteousness in him.</text>
+      </half>
+    </verse>
+
+  </psalm>
+
+  <psalm n="95">
+    <incipit latin="Venite, exultemus"/>
+
+    <verse n="1">
+      <half pos="a">
+        <text version="bcp1928">O come, let us sing unto the <dn>Lord</dn>;</text>
+        <text version="modern">O come, let us sing to the <dn>Lord</dn>;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">let us heartily rejoice in the strength of our salvation.</text>
+        <text version="modern">let us heartily rejoice in the strength of our salvation.</text>
+      </half>
+    </verse>
+
+    <verse n="2">
+      <half pos="a">
+        <text version="bcp1928">Let us come before his presence with thanksgiving,</text>
+        <text version="modern">Let us come before his presence with thanksgiving,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and show ourselves glad in him with psalms.</text>
+        <text version="modern">and show ourselves glad in him with psalms.</text>
+      </half>
+    </verse>
+
+    <verse n="3">
+      <half pos="a">
+        <text version="bcp1928">For the <dn>Lord</dn> is a great God,</text>
+        <text version="modern">For the <dn>Lord</dn> is a great God,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and a great King above all gods.</text>
+        <text version="modern">and a great King above all gods.</text>
+      </half>
+    </verse>
+
+    <verse n="4">
+      <half pos="a">
+        <text version="bcp1928">In his hand are all the corners of the earth,</text>
+        <text version="modern">In his hand are all the corners of the earth,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and the strength of the hills is his also.</text>
+        <text version="modern">and the strength of the hills is his also.</text>
+      </half>
+    </verse>
+
+    <verse n="5">
+      <half pos="a">
+        <text version="bcp1928">The sea is his, and he made it;</text>
+        <text version="modern">The sea is his, and he made it;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and his hands prepared the dry land.</text>
+        <text version="modern">and his hands prepared the dry land.</text>
+      </half>
+    </verse>
+
+    <verse n="6">
+      <half pos="a">
+        <text version="bcp1928">O come, let us worship and fall down,</text>
+        <text version="modern">O come, let us worship and bow down,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and kneel before the <dn>Lord</dn> our Maker.</text>
+        <text version="modern">and kneel before the <dn>Lord</dn> our Maker.</text>
+      </half>
+      <note type="translation">"Fall down" now reads as accident;
+      "bow down" restores the intended act of homage.</note>
+    </verse>
+
+    <verse n="7">
+      <half pos="a">
+        <text version="bcp1928">For he is the Lord our God,</text>
+        <text version="modern">For he is the Lord our God,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and we are the people of his pasture, and the sheep of his hand.</text>
+        <text version="modern">and we are the people of his pasture, and the sheep of his hand.</text>
+      </half>
+    </verse>
+
+    <verse n="8">
+      <half pos="a">
+        <text version="bcp1928">To-day if ye will hear his voice, harden not your hearts,</text>
+        <text version="modern">Today if you will hear his voice, harden not your hearts,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">as in the provocation, and as in the day of temptation in the wilderness;</text>
+        <text version="modern">as at the rebellion, and as in the day of testing in the wilderness;</text>
+      </half>
+      <note type="translation">"Provocation" and "temptation" translate the
+      place-names Meribah and Massah; "rebellion" and "testing" render
+      their meanings for modern ears.</note>
+    </verse>
+
+    <verse n="9">
+      <half pos="a">
+        <text version="bcp1928">When your fathers tempted me,</text>
+        <text version="modern">When your forebears put me to the test,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">proved me, and saw my works.</text>
+        <text version="modern">they tried me, though they had seen my works.</text>
+      </half>
+      <note type="translation">"Tempted" and "proved" have shifted sense;
+      the Hebrew speaks of testing God despite having witnessed his
+      deeds.</note>
+    </verse>
+
+    <verse n="10">
+      <half pos="a">
+        <text version="bcp1928">Forty years long was I grieved with this generation, and said,</text>
+        <text version="modern">Forty years long I grieved over that generation, and said,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">It is a people that do err in their hearts, for they have not known my ways;</text>
+        <text version="modern">It is a people that go astray in their hearts, for they have not known my ways;</text>
+      </half>
+    </verse>
+
+    <verse n="11">
+      <half pos="a">
+        <text version="bcp1928">Unto whom I sware in my wrath,</text>
+        <text version="modern">To whom I swore in my wrath,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">that they should not enter into my rest.</text>
+        <text version="modern">that they should never enter my rest.</text>
+      </half>
+      <note type="liturgical">As the Venite at Morning Prayer the American
+      books historically omit verses 8-11 or substitute Psalm 96:9, 13;
+      the full psalm is given here.</note>
+    </verse>
+
+  </psalm>
+
+  <psalm n="98">
+    <incipit latin="Cantate Domino"/>
+
+    <verse n="1">
+      <half pos="a">
+        <text version="bcp1928">O sing unto the <dn>Lord</dn> a new song;</text>
+        <text version="modern">O sing to the <dn>Lord</dn> a new song,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">for he hath done marvellous things.</text>
+        <text version="modern">for he has done marvelous things.</text>
+      </half>
+    </verse>
+
+    <verse n="2">
+      <half pos="a">
+        <text version="bcp1928">With his own right hand, and with his holy arm,</text>
+        <text version="modern">With his own right hand and with his holy arm</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">hath he gotten himself the victory.</text>
+        <text version="modern">he has won himself the victory.</text>
+      </half>
+    </verse>
+
+    <verse n="3">
+      <half pos="a">
+        <text version="bcp1928">The <dn>Lord</dn> declared his salvation;</text>
+        <text version="modern">The <dn>Lord</dn> declared his salvation;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">his righteousness hath he openly showed in the sight of the heathen.</text>
+        <text version="modern">his righteousness he has openly shown in the sight of the nations.</text>
+      </half>
+      <note type="textual">The 1928 book retains "heathen" here, unlike the
+      passages it revised to "nations"; the modern text completes the
+      change.</note>
+    </verse>
+
+    <verse n="4">
+      <half pos="a">
+        <text version="bcp1928">He hath remembered his mercy and truth toward the house of Israel;</text>
+        <text version="modern">He has remembered his mercy and truth toward the house of Israel,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and all the ends of the world have seen the salvation of our God.</text>
+        <text version="modern">and all the ends of the world have seen the salvation of our God.</text>
+      </half>
+    </verse>
+
+    <verse n="5">
+      <half pos="a">
+        <text version="bcp1928">Show yourselves joyful unto the <dn>Lord</dn>, all ye lands;</text>
+        <text version="modern">Show yourselves joyful to the <dn>Lord</dn>, all you lands;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">sing, rejoice, and give thanks.</text>
+        <text version="modern">sing, rejoice, and give thanks.</text>
+      </half>
+    </verse>
+
+    <verse n="6">
+      <half pos="a">
+        <text version="bcp1928">Praise the <dn>Lord</dn> upon the harp;</text>
+        <text version="modern">Praise the <dn>Lord</dn> upon the harp;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">sing to the harp with a psalm of thanksgiving.</text>
+        <text version="modern">sing to the harp with a psalm of thanksgiving.</text>
+      </half>
+    </verse>
+
+    <verse n="7">
+      <half pos="a">
+        <text version="bcp1928">With trumpets also and shawms,</text>
+        <text version="modern">With trumpets also and the sound of the horn,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">O show yourselves joyful before the <dn>Lord</dn> the King.</text>
+        <text version="modern">O show yourselves joyful before the <dn>Lord</dn> the King.</text>
+      </half>
+      <note type="translation">The shawm, a Renaissance double-reed
+      instrument, translated the Hebrew shofar, the ram's horn; the
+      modern text returns to the horn.</note>
+    </verse>
+
+    <verse n="8">
+      <half pos="a">
+        <text version="bcp1928">Let the sea make a noise, and all that therein is;</text>
+        <text version="modern">Let the sea make a noise, and all that is in it,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">the round world, and they that dwell therein.</text>
+        <text version="modern">the round world, and those who dwell therein.</text>
+      </half>
+    </verse>
+
+    <verse n="9">
+      <half pos="a">
+        <text version="bcp1928">Let the floods clap their hands, and let the hills be joyful together before the <dn>Lord</dn>;</text>
+        <text version="modern">Let the floods clap their hands, and let the hills be joyful together before the <dn>Lord</dn>,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">for he is come to judge the earth.</text>
+        <text version="modern">for he has come to judge the earth.</text>
+      </half>
+    </verse>
+
+    <verse n="10">
+      <half pos="a">
+        <text version="bcp1928">With righteousness shall he judge the world,</text>
+        <text version="modern">With righteousness shall he judge the world,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and the peoples with equity.</text>
+        <text version="modern">and the peoples with equity.</text>
+      </half>
+    </verse>
+
+  </psalm>
+
+  <psalm n="100">
+    <incipit latin="Jubilate Deo"/>
+
+    <verse n="1">
+      <half pos="a">
+        <text version="bcp1928">O be joyful in the <dn>Lord</dn>, all ye lands:</text>
+        <text version="modern">O be joyful in the <dn>Lord</dn>, all you lands;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">serve the <dn>Lord</dn> with gladness, and come before his presence with a song.</text>
+        <text version="modern">serve the <dn>Lord</dn> with gladness, and come before his presence with a song.</text>
+      </half>
+    </verse>
+
+    <verse n="2">
+      <half pos="a">
+        <text version="bcp1928">Be ye sure that the <dn>Lord</dn> he is God; it is he that hath made us, and not we ourselves;</text>
+        <text version="modern">Be sure that the <dn>Lord</dn>, he is God; it is he who has made us, and we are his;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">we are his people, and the sheep of his pasture.</text>
+        <text version="modern">we are his people, and the sheep of his pasture.</text>
+      </half>
+      <note type="translation">"Not we ourselves" follows the written Hebrew
+      text (lo, "not"); the read tradition (lo, "to him") gives "and we are
+      his," adopted by most modern versions and here.</note>
+    </verse>
+
+    <verse n="3">
+      <half pos="a">
+        <text version="bcp1928">O go your way into his gates with thanksgiving, and into his courts with praise;</text>
+        <text version="modern">O go your way into his gates with thanksgiving, and into his courts with praise;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">be thankful unto him, and speak good of his Name.</text>
+        <text version="modern">be thankful to him, and speak good of his Name.</text>
+      </half>
+    </verse>
+
+    <verse n="4">
+      <half pos="a">
+        <text version="bcp1928">For the <dn>Lord</dn> is gracious, his mercy is everlasting;</text>
+        <text version="modern">For the <dn>Lord</dn> is gracious, his mercy is everlasting;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and his truth endureth from generation to generation.</text>
+        <text version="modern">and his truth endures from generation to generation.</text>
+      </half>
+    </verse>
+
+  </psalm>
+
+  <psalm n="117">
+    <incipit latin="Laudate Dominum"/>
+
+    <verse n="1">
+      <half pos="a">
+        <text version="bcp1928">O praise the <dn>Lord</dn>, all ye nations;</text>
+        <text version="modern">O praise the <dn>Lord</dn>, all you nations;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">praise him, all ye peoples.</text>
+        <text version="modern">praise him, all you peoples.</text>
+      </half>
+      <note type="textual">"Nations" and "peoples" are themselves 1928
+      revisions: earlier books read "heathen" and "people."</note>
+    </verse>
+
+    <verse n="2">
+      <half pos="a">
+        <text version="bcp1928">For his merciful kindness is ever more and more toward us;</text>
+        <text version="modern">For his merciful kindness is ever more and more toward us;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and the truth of the <dn>Lord</dn> endureth for ever. Praise the <dn>Lord</dn>.</text>
+        <text version="modern">and the truth of the <dn>Lord</dn> endures for ever. Praise the <dn>Lord</dn>.</text>
+      </half>
+    </verse>
+
+  </psalm>
+
+  <psalm n="121">
+    <incipit latin="Levavi oculos"/>
+
+    <verse n="1">
+      <half pos="a">
+        <text version="bcp1928">I will lift up mine eyes unto the hills;</text>
+        <text version="modern">I will lift up my eyes to the hills;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">from whence cometh my help?</text>
+        <text version="modern">from where is my help to come?</text>
+      </half>
+      <note type="textual">Question mark introduced in 1928; earlier American
+      and English books print a period, reading the line as a statement.
+      The interrogative follows the Hebrew.</note>
+    </verse>
+
+    <verse n="2">
+      <half pos="a">
+        <text version="bcp1928">My help cometh even from the <dn>Lord</dn>,</text>
+        <text version="modern">My help comes even from the <dn>Lord</dn>,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">who hath made heaven and earth.</text>
+        <text version="modern">who has made heaven and earth.</text>
+      </half>
+    </verse>
+
+    <verse n="3">
+      <half pos="a">
+        <text version="bcp1928">He will not suffer thy foot to be moved;</text>
+        <text version="modern">He will not let your foot be moved;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and he that keepeth thee will not sleep.</text>
+        <text version="modern">and he who keeps you will not sleep.</text>
+      </half>
+    </verse>
+
+    <verse n="4">
+      <half pos="a">
+        <text version="bcp1928">Behold, he that keepeth Israel</text>
+        <text version="modern">Behold, he who keeps Israel</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">shall neither slumber nor sleep.</text>
+        <text version="modern">shall neither slumber nor sleep.</text>
+      </half>
+    </verse>
+
+    <verse n="5">
+      <half pos="a">
+        <text version="bcp1928">The <dn>Lord</dn> himself is thy keeper;</text>
+        <text version="modern">The <dn>Lord</dn> himself is your keeper;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">the <dn>Lord</dn> is thy defence upon thy right hand;</text>
+        <text version="modern">the <dn>Lord</dn> is your defense upon your right hand;</text>
+      </half>
+    </verse>
+
+    <verse n="6">
+      <half pos="a">
+        <text version="bcp1928">So that the sun shall not burn thee by day,</text>
+        <text version="modern">So that the sun shall not strike you by day,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">neither the moon by night.</text>
+        <text version="modern">neither the moon by night.</text>
+      </half>
+      <note type="translation">Hebrew nakah, "smite/strike": "strike" covers
+      both sunstroke and the traditional fear of moonstroke, where "burn"
+      fits only the sun.</note>
+    </verse>
+
+    <verse n="7">
+      <half pos="a">
+        <text version="bcp1928">The <dn>Lord</dn> shall preserve thee from all evil;</text>
+        <text version="modern">The <dn>Lord</dn> shall preserve you from all evil;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">yea, it is even he that shall keep thy soul.</text>
+        <text version="modern">yea, it is even he who shall keep your soul.</text>
+      </half>
+    </verse>
+
+    <verse n="8">
+      <half pos="a">
+        <text version="bcp1928">The <dn>Lord</dn> shall preserve thy going out, and thy coming in,</text>
+        <text version="modern">The <dn>Lord</dn> shall preserve your going out and your coming in,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">from this time forth for evermore.</text>
+        <text version="modern">from this time forth for evermore.</text>
+      </half>
+    </verse>
+
+  </psalm>
+
+  <psalm n="130">
+    <incipit latin="De profundis"/>
+
+    <verse n="1">
+      <half pos="a">
+        <text version="bcp1928">Out of the deep have I called unto thee, O <dn>Lord</dn>;</text>
+        <text version="modern">Out of the deep have I called to you, O <dn>Lord</dn>;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">Lord, hear my voice.</text>
+        <text version="modern">Lord, hear my voice.</text>
+      </half>
+    </verse>
+
+    <verse n="2">
+      <half pos="a">
+        <text version="bcp1928">O let thine ears consider well</text>
+        <text version="modern">O let your ears consider well</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">the voice of my complaint.</text>
+        <text version="modern">the voice of my supplication.</text>
+      </half>
+      <note type="translation">"Complaint" in its older sense meant a plea
+      or lament, not a grievance; "supplication" restores the sense.</note>
+    </verse>
+
+    <verse n="3">
+      <half pos="a">
+        <text version="bcp1928">If thou, <dn>Lord</dn>, wilt be extreme to mark what is done amiss,</text>
+        <text version="modern">If you, <dn>Lord</dn>, should be extreme to mark what is done amiss,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">O Lord, who may abide it?</text>
+        <text version="modern">O Lord, who could abide it?</text>
+      </half>
+    </verse>
+
+    <verse n="4">
+      <half pos="a">
+        <text version="bcp1928">For there is mercy with thee;</text>
+        <text version="modern">For there is mercy with you;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">therefore shalt thou be feared.</text>
+        <text version="modern">therefore you shall be feared.</text>
+      </half>
+    </verse>
+
+    <verse n="5">
+      <half pos="a">
+        <text version="bcp1928">I look for the <dn>Lord</dn>; my soul doth wait for him;</text>
+        <text version="modern">I look for the <dn>Lord</dn>; my soul waits for him;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">in his word is my trust.</text>
+        <text version="modern">in his word is my trust.</text>
+      </half>
+    </verse>
+
+    <verse n="6">
+      <half pos="a">
+        <text version="bcp1928">My soul fleeth unto the Lord before the morning watch;</text>
+        <text version="modern">My soul waits for the Lord more than watchmen for the morning;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">I say, before the morning watch.</text>
+        <text version="modern">more, I say, than watchmen for the morning.</text>
+      </half>
+      <note type="translation">Coverdale's "fleeth unto the Lord before the
+      morning watch" loses the Hebrew comparison: the soul waits for the
+      LORD more eagerly than sentries wait for dawn. The 1928 revision
+      itself adjusted this verse's punctuation from earlier books.</note>
+    </verse>
+
+    <verse n="7">
+      <half pos="a">
+        <text version="bcp1928">O Israel, trust in the <dn>Lord</dn>; for with the <dn>Lord</dn> there is mercy,</text>
+        <text version="modern">O Israel, trust in the <dn>Lord</dn>; for with the <dn>Lord</dn> there is mercy,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and with him is plenteous redemption.</text>
+        <text version="modern">and with him is plenteous redemption.</text>
+      </half>
+    </verse>
+
+    <verse n="8">
+      <half pos="a">
+        <text version="bcp1928">And he shall redeem Israel</text>
+        <text version="modern">And he shall redeem Israel</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">from all his sins.</text>
+        <text version="modern">from all his sins.</text>
+      </half>
+    </verse>
+
+  </psalm>
+
+  <psalm n="134">
+    <incipit latin="Ecce nunc"/>
+
+    <verse n="1">
+      <half pos="a">
+        <text version="bcp1928">Behold now, praise the <dn>Lord</dn>,</text>
+        <text version="modern">Behold now, praise the <dn>Lord</dn>,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">all ye servants of the <dn>Lord</dn>;</text>
+        <text version="modern">all you servants of the <dn>Lord</dn>;</text>
+      </half>
+    </verse>
+
+    <verse n="2">
+      <half pos="a">
+        <text version="bcp1928">Ye that by night stand in the house of the <dn>Lord</dn>,</text>
+        <text version="modern">You who by night stand in the house of the <dn>Lord</dn>,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">even in the courts of the house of our God.</text>
+        <text version="modern">even in the courts of the house of our God.</text>
+      </half>
+    </verse>
+
+    <verse n="3">
+      <half pos="a">
+        <text version="bcp1928">Lift up your hands in the sanctuary,</text>
+        <text version="modern">Lift up your hands in the sanctuary,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and praise the <dn>Lord</dn>.</text>
+        <text version="modern">and praise the <dn>Lord</dn>.</text>
+      </half>
+    </verse>
+
+    <verse n="4">
+      <half pos="a">
+        <text version="bcp1928">The <dn>Lord</dn> that made heaven and earth</text>
+        <text version="modern">The <dn>Lord</dn> who made heaven and earth</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">give thee blessing out of Sion.</text>
+        <text version="modern">give you blessing out of Zion.</text>
+      </half>
+      <note type="textual">The 1928 book retains the spelling "Sion";
+      the modern text adopts the standard "Zion."</note>
+    </verse>
+
+  </psalm>
+
+  <psalm n="141">
+    <incipit latin="Domine, clamavi"/>
+
+    <verse n="1">
+      <half pos="a">
+        <text version="bcp1928"><dn>Lord</dn>, I call upon thee; haste thee unto me,</text>
+        <text version="modern"><dn>Lord</dn>, I call upon you; hasten to me,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and consider my voice, when I cry unto thee.</text>
+        <text version="modern">and consider my voice when I cry to you.</text>
+      </half>
+    </verse>
+
+    <verse n="2">
+      <half pos="a">
+        <text version="bcp1928">Let my prayer be set forth in thy sight as the incense;</text>
+        <text version="modern">Let my prayer be set forth in your sight as the incense;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and let the lifting up of my hands be an evening sacrifice.</text>
+        <text version="modern">and let the lifting up of my hands be an evening sacrifice.</text>
+      </half>
+      <note type="liturgical">The foundational verse of evening prayer
+      across the traditions, sung at Orthodox vespers and in modern
+      Western evening rites; wording untouched apart from the
+      pronoun.</note>
+    </verse>
+
+    <verse n="3">
+      <half pos="a">
+        <text version="bcp1928">Set a watch, O <dn>Lord</dn>, before my mouth,</text>
+        <text version="modern">Set a watch, O <dn>Lord</dn>, before my mouth,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and keep the door of my lips.</text>
+        <text version="modern">and keep the door of my lips.</text>
+      </half>
+    </verse>
+
+    <verse n="4">
+      <half pos="a">
+        <text version="bcp1928">O let not mine heart be inclined to any evil thing;</text>
+        <text version="modern">O let not my heart be inclined to any evil thing;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">let me not be occupied in ungodly works with the men that work wickedness, neither let me eat of such things as please them.</text>
+        <text version="modern">let me not be occupied in ungodly works with those who do wickedness, neither let me eat of their delicacies.</text>
+      </half>
+      <note type="textual">The 1928 revision itself recast this verse and
+      the next from the older books' wording.</note>
+    </verse>
+
+    <verse n="5">
+      <half pos="a">
+        <text version="bcp1928">Let the righteous rather smite me friendly, and reprove me;</text>
+        <text version="modern">Let the righteous rather strike me in kindness, and reprove me;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">yea, let not my head refuse their precious balms.</text>
+        <text version="modern">yea, let not my head refuse their precious oil.</text>
+      </half>
+      <note type="translation">"Smite me friendly" — a kindly rebuke —
+      is charming but now opaque; the oil is the anointing oil of
+      hospitality.</note>
+    </verse>
+
+    <verse n="6">
+      <half pos="a">
+        <text version="bcp1928">As for the ungodly,</text>
+        <text version="modern">As for the ungodly,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">I will pray yet against their wickedness.</text>
+        <text version="modern">I will pray yet against their wickedness.</text>
+      </half>
+    </verse>
+
+    <verse n="7">
+      <half pos="a">
+        <text version="bcp1928">Let their judges be overthrown in stony places,</text>
+        <text version="modern">Let their judges be overthrown in stony places,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">that they may hear my words; for they are sweet.</text>
+        <text version="modern">that they may hear my words; for they are sweet.</text>
+      </half>
+    </verse>
+
+    <verse n="8">
+      <half pos="a">
+        <text version="bcp1928">Our bones lie scattered before the pit,</text>
+        <text version="modern">Our bones lie scattered before the pit,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">like as when one breaketh and heweth wood upon the earth.</text>
+        <text version="modern">as when one breaks and hews wood upon the earth.</text>
+      </half>
+    </verse>
+
+    <verse n="9">
+      <half pos="a">
+        <text version="bcp1928">But mine eyes look unto thee, O <dn>Lord</dn> God;</text>
+        <text version="modern">But my eyes look to you, O <dn>Lord</dn> God;</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">in thee is my trust; O cast not out my soul.</text>
+        <text version="modern">in you is my trust; O cast not out my soul.</text>
+      </half>
+    </verse>
+
+    <verse n="10">
+      <half pos="a">
+        <text version="bcp1928">Keep me from the snare that they have laid for me,</text>
+        <text version="modern">Keep me from the snare that they have laid for me,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and from the traps of the wicked doers.</text>
+        <text version="modern">and from the traps of the evildoers.</text>
+      </half>
+    </verse>
+
+    <verse n="11">
+      <half pos="a">
+        <text version="bcp1928">Let the ungodly fall into their own nets together,</text>
+        <text version="modern">Let the ungodly fall into their own nets together,</text>
+      </half>
+      <half pos="b">
+        <text version="bcp1928">and let me ever escape them.</text>
+        <text version="modern">and let me ever escape them.</text>
+      </half>
+    </verse>
+
+  </psalm>
+
+</psalter>
